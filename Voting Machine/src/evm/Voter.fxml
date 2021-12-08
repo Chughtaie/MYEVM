@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+ 
+<AnchorPane fx:id="Vote" prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="evm.Handler">
+   <children>
+      <ImageView fitHeight="500.0" fitWidth="500.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../images.jpg" />
+         </image>
+      </ImageView>
+      <TextField fx:id="name" layoutX="155.0" layoutY="134.0" prefHeight="25.0" prefWidth="173.0" promptText="abdulllah john" />
+      <Button layoutX="174.0" layoutY="309.0" mnemonicParsing="false" onAction="#reg_Voter" prefHeight="25.0" prefWidth="118.0" text="Register" />
+      <Label layoutX="96.0" layoutY="138.0" prefHeight="17.0" prefWidth="95.0" text="NAME">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <TextField fx:id="cnic" layoutX="155.0" layoutY="184.0" prefHeight="25.0" prefWidth="173.0" promptText="12345678" />
+      <Label layoutX="96.0" layoutY="188.0" text="CNIC">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></Label>
+      <Label layoutX="211.0" layoutY="48.0" prefHeight="34.0" prefWidth="101.0" scaleX="3.0" scaleY="3.0" text="Voter Registration" />
+      <Label layoutX="89.0" layoutY="233.0" text="REGION">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>   
+      <ChoiceBox fx:id="cb_region" layoutX="155.0" layoutY="230.0" prefHeight="25.0" prefWidth="173.0" />
+      <CheckBox layoutX="340.0" layoutY="234.0" mnemonicParsing="false" onAction="#populateRegionVoter" text="Populate">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font></CheckBox>
+      <Button layoutX="361.0" layoutY="355.0" mnemonicParsing="false" onAction="#openMain" text="Back" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="Vote" prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="evm.Handler">
+   <children>
+      <ImageView fitHeight="500.0" fitWidth="500.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../evm.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="174.0" layoutY="309.0" mnemonicParsing="false" onAction="#castVote" prefHeight="25.0" prefWidth="118.0" text="Vote" />
+      <TextField fx:id="cnic" layoutX="155.0" layoutY="184.0" prefHeight="25.0" prefWidth="173.0" promptText="12345678" />
+      <Label layoutX="96.0" layoutY="188.0" text="CNIC">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="211.0" layoutY="48.0" prefHeight="34.0" prefWidth="101.0" scaleX="3.0" scaleY="3.0" text="Cast Vote" />
+      <Label layoutX="96.0" layoutY="234.0" text="Candidate" />   
+      <ChoiceBox fx:id="cb_candidate" layoutX="155.0" layoutY="230.0" prefHeight="25.0" prefWidth="173.0" />
+      <CheckBox layoutX="345.0" layoutY="234.0" mnemonicParsing="false" onAction="#populateCandidate" text="Populate" textFill="#24da2a" />
+      <Button layoutX="361.0" layoutY="375.0" mnemonicParsing="false" onAction="#openMain" text="Back" />
+   </children>
+</AnchorPane>

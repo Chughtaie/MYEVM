@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="Vote" prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="evm.Handler">
+   <children>
+  
+      <TextField fx:id="name" layoutX="155.0" layoutY="134.0" prefHeight="25.0" prefWidth="173.0" promptText="abdulllah john" />
+      <Button layoutX="169.0" layoutY="422.0" mnemonicParsing="false" onAction="#reg_Candidate" prefHeight="25.0" prefWidth="118.0" text="Register" />
+      <Label layoutX="96.0" layoutY="138.0" prefHeight="17.0" prefWidth="95.0" text="NAME" />
+      <TextField fx:id="cnic" layoutX="155.0" layoutY="176.0" prefHeight="25.0" prefWidth="173.0" promptText="12345678" />
+      <Label layoutX="97.0" layoutY="180.0" text="CNIC" />
+      <Label layoutX="211.0" layoutY="48.0" prefHeight="34.0" prefWidth="125.0" scaleX="3.0" scaleY="3.0" text="Candidate Registration" />
+      <Label layoutX="97.0" layoutY="229.0" text="AGE" />
+      <TextField fx:id="age" layoutX="155.0" layoutY="225.0" prefHeight="25.0" prefWidth="173.0" promptText="25-50" />      
+      <CheckBox layoutX="350.0" layoutY="330.0" mnemonicParsing="false" onAction="#populateParty" text="Available Party" />
+      <Label layoutX="93.0" layoutY="330.0" text="PARTY" />
+      <ChoiceBox fx:id="cb_party" layoutX="155.0" layoutY="326.0" prefHeight="25.0" prefWidth="173.0" />
+      <ChoiceBox fx:id="cb_region" layoutX="155.0" layoutY="370.0" prefHeight="25.0" prefWidth="173.0" />
+      <Label layoutX="98.0" layoutY="374.0" text="REGION" />
+      <Label layoutX="92.0" layoutY="276.0" text="ID" />
+      <TextField fx:id="cid" layoutX="155.0" layoutY="272.0" prefHeight="25.0" prefWidth="173.0" promptText="x3jdn" />
+      <CheckBox layoutX="350.0" layoutY="374.0" mnemonicParsing="false" onAction="#populateRegion" text="Available Region" />
+      <Button layoutX="374.0" layoutY="422.0" mnemonicParsing="false" onAction="#openMain" text="Back" />
+   </children>
+</AnchorPane>
